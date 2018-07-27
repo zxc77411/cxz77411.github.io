@@ -1,0 +1,255 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+        }
+
+        #nav-wrap {
+            font: 24px 'Open Sans', sans-serif;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            margin: 0 auto;
+            z-index: 100;
+            position: fixed;
+            left: 0;
+            top: 0;
+            font-weight: bold;
+        }
+
+        ul#navb li {
+            position: relative;
+            list-style: none;
+            height: 42px;
+            display: inline-block;
+        }
+
+        ul#navb li a {
+            display: inline-block;
+            padding: 8px 13px;
+            line-height: 32px;
+            text-decoration: none;
+            text-align: left;
+            color: #DDDDDD;
+            -webkit-transition: color .2s ease-in-out;
+            -moz-transition: color .2s ease-in-out;
+            -o-transition: color .2s ease-in-out;
+            -ms-transition: color .2s ease-in-out;
+            transition: color .2s ease-in-out;
+        }
+
+        ul#navb li.current a {
+            color: rgb(49, 156, 112);
+        }
+
+        ul#navb li a:hover {
+            border-bottom: 3px solid rgb(39, 141, 94);
+            transition: .2s fade-in;
+        }
+
+        .logo {
+            position: relative;
+            right: 300px;
+            color: #DDDDDD;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="home">
+        <nav id="nav-wrap" style="display: block;">
+
+            <ul id="navb" class="navb">
+                <li>
+                    <div class="logo">logo</div>
+                </li>
+                <li class="current">
+                    <a href="#home">介紹</a>
+                </li>
+                <li>
+                    <a href="#about">AAA</a>
+                </li>
+                <li>
+                    <a href="#resume">BBB</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="es1">
+        <!-- Swiper -->
+        <div class="container-fluid" style="padding:0 ;">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="http://breakfastatsniffanys.ca/wp-content/uploads/2017/05/happy-cat-month.jpg" alt="" style="width:100%  ;height:100% ;">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://petable.care/wp-content/uploads/2016/11/o-INDOOR-CAT-facebook.jpg" alt="" style="width:100%  ;height:100% ;">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://cdn.shopify.com/s/files/1/1309/8421/articles/Games-your-cat-will-love.jpg?v=1501407077" alt="" style="width:100%  ;height:100% ;">
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+    <div class="es2">
+        <div class="container  href=" #home "">
+            <div class="row">
+                <div class="col">
+                    <div data-aos="fade-down" class="card" style="background-color: #FFD2BC; color: #000;margin:15px ; ">
+                        <H2 class="text-justify text-center">
+                            <b>米克斯</b>
+                        </H2>
+                        <p class="text-justify text-center">混種短毛貓是來自不同地方混種的貓，每個品種的貓會有不同的外貌特徵和性格，這也是經由各種不同品系雜交後的結果。臺灣將混種貓俗稱為米克斯貓。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-end">
+
+                <div class="col-12 col-sm-12 col-lg-4">
+                    <div data-aos="fade-right" class="card ">
+                        <img class="card-img-top" src="img/虎.jpg" style="height: 300px;">
+                        <div class="card-body" style="background-color:#C48A74; color: #FFFF; ">
+                            <H4>
+                                <b>虎斑貓</b>
+                            </H4>
+                            <p class="text-justify">虎斑貓是指擁有條紋、點狀或旋渦狀斑紋的貓，通常在額頭上還會有「M」型標記。類似的斑紋可以出現在很多種不同種類的純種或混種貓的身上。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-4">
+                    <div data-aos="flip-left" class="card ">
+                        <img class="card-img-top" src="img/代.jpeg" style="height: 300px;">
+
+                        <div class="card-body" style="background-color:#C48A74; color: #FFFF; ">
+                            <H4>
+                                <b>玳瑁貓</b>
+                            </H4>
+                            <p class="text-justify">黑色及深淺紅色的斑紋。貓咪身上如果有三種顏色存在，這樣的毛色屬於性聯基因，通常會發生在母貓身上，公貓出現三色現象，一般都是染色體異常，缺乏生殖能力。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-4">
+                    <div data-aos="fade-left" class="card ">
+                        <img class="card-img-top" src="img/3.jpg" style="height: 300px;">
+                        <div class="card-body" style="background-color:#C48A74; color: #FFFF; ">
+                            <H4>
+                                <b>三色貓</b>
+                            </H4>
+                            <p class="text-justify">「玳瑁白色貓」就是三色貓的正式名稱，身上可以見到黑色、橘黃色、白色三種顏色漂亮分布著，在英國被稱為「印花白貓」在美國被稱為「花班貓」。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="background-color: #FFD2BC; color: #000;margin: 15px; ">
+                        <H2 class="text-justify text-center">
+                            <b>波斯</b>
+                        </H2>
+                        <p class="text-justify text-center" style="padding:0 10px;">波斯貓起源於波斯（即今天的伊朗），16世紀首次出現在英國，一般認為首先將波斯貓帶入歐洲的是義大利的旅行家Pietro Della Valle，雪白蓬鬆的長毛被視為高貴的象徵，在歐洲一出現便很受歡迎，經繁殖至今品種愈來愈多。但今天所見的長毛波斯貓的品種則是19世紀時所產生
+                            正確起源不詳。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-end">
+                <div class="col-12 col-sm-12">
+                    <div class="card-group">
+                        <div class="card">
+                            <img class="card-img-top" src="img/波.jpg" alt="Card image cap">
+                            <div class="card-body" style="background-color:#C48A74; color: #FFFF; ">>
+                                <b>波斯貓</b>
+                                </h4>
+                                <p class="text-justify">波斯貓有極長且蓬鬆的毛、相對較短的腿、較寬扁的頭及距離較開的兩耳、大眼，以及較扁的臉部、波斯貓有各種不同的顏色，常見的有白色、虎斑、藍色和褐色。</p>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="img/金.jpg">
+                            <div class="card-body" style="background-color:#C48A74; color: #FFFF; ">
+                                <h4 class="card-title">
+                                    <b>金吉拉</b>
+                                </h4>
+                                <p class="text-justify">金吉拉是人類以波斯貓和安哥拉貓繁殖培育而成的波斯貓的一支。體型中型到大型都有，特徵跟波斯貓一樣全身都是蓬鬆的長毛，但是臉部不像波斯貓那樣扁，而是像一般常見貓種的外貌。</p>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="img/喜.jpg" style="height:380px ;">
+                            <div class="card-body" style="background-color:#C48A74; color: #FFFF; ">
+                                <h4 class="card-title">
+                                    <b>喜馬拉雅貓</b>
+                                </h4>
+                                <p class="text-justify">喜馬拉雅貓是由暹羅貓與波斯貓經由人工繁殖而來除了藍眼睛和重點色毛皮外，其餘特徵等同於波斯貓，毛色和毛質如同暹羅貓，另加豹色點狀、藍色點狀、巧克力色點狀和淡紫色點狀4種點狀毛色 毛質同波斯貓，為光滑濃密的雙層毛觸感柔細。
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+            crossorigin="anonymous "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js " integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T "
+            crossorigin="anonymous "></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+
+            AOS.init();
+        </script>
+
+
+
+
+</body>
+
+
+
+
+
+
+</html>
