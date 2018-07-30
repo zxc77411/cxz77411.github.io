@@ -1,0 +1,153 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+</head>
+<style>
+    body {
+        height: 6000px;
+
+    }
+   
+
+
+    .tab_btn {
+
+        background-color: blanchedalmond;
+        display: inline-block;
+        padding: 2% 3%;
+        margin: 10 150px;
+    }
+
+    .tab_content {
+        width: 72.5%;
+        padding: 15px 15px;
+        display: none;
+        margin: 0 150px;
+        text-align:center;
+    }
+
+    .active {
+        display: block;
+    }
+
+    #backTop {
+        position: fixed;
+        bottom: 450px;
+        right: 30px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        display: none;
+        background-color: turquoise;
+        color: #FFFF  ;
+        border: 0px solid;
+        border-radius: 100%;
+    }
+ .box1{margin-top:50%; 
+     padding: 50px;
+ background-color: bisque
+
+
+ }
+
+</style>
+
+
+
+
+<body>
+     
+  
+    <button id="backTop">Top</button>
+    <div class="tab_btn" id="tab_btn_1">tab1</div>
+    <div class="tab_btn" id="tab_btn_2">tab2</div>
+    <div class="tab_btn" id="tab_btn_3">tab3</div>
+
+    <div class="tab_content active" id="tab_content_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eveniet harum possimus laboriosam aut dolorem ducimus
+        eligendi dignissimos, ipsum nobis accusamus quibusdam omnis voluptatum earum illum eaque perspiciatis, in iste!</div>
+    <div class="tab_content" id="tab_content_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eveniet harum possimus laboriosam aut dolorem ducimus
+        eligendi dignissimos, ipsum nobis accusamus quibusdam omnis voluptatum earum illum eaque perspiciatis, in iste!</div>
+    <div class="tab_content" id="tab_content_3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eveniet harum possimus laboriosam aut dolorem ducimus
+        eligendi dignissimos, ipsum nobis accusamus quibusdam omnis voluptatum earum illum eaque perspiciatis, in iste!</div>
+
+    <div data-aos="fade-right" class="box1"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $()
+
+
+        $("#tab_btn_1").click(function () {
+            $("#tab_content_1").slideDown("active");
+            $("#tab_content_2").slideUp("active");
+            $("#tab_content_3").slideUp("active");
+
+
+        });
+        $("#tab_content_1").css({
+            "background-color": "lightcoral",
+            "font-size": "200%",
+            "color": "#FFFF"
+        });
+        $("#tab_content_2").css({
+            "background-color": "lightblue",
+            "font-size": "200%",
+            "color": "#FFFF"
+        });
+        $("#tab_content_3").css({
+            "background-color": "turquoise",
+            "font-size": "200%",
+            "color": "#FFFF"
+        });
+
+        $("#tab_btn_2").click(function () {
+            $("#tab_content_1").slideUp("active");
+            $("#tab_content_2").slideDown("active");
+            $("#tab_content_3").slideUp("active");
+
+        });
+
+
+        $("#tab_btn_3").click(function () {
+            $("#tab_content_1").slideUp("active");
+            $("#tab_content_2").slideUp("active");
+            $("#tab_content_3").slideDown("active");
+
+        });
+        //TOP扭固定於300顯示
+        $(window).scroll(function () {
+            var s = $(window).scrollTop();
+
+            if (s > 226) {
+                $("#backTop").show();
+            } else {
+                $("#backTop").hide();
+            }
+
+        })
+
+        //回到TOP
+        $("#backTop").click(function () {
+            $("html,body").animate({
+                scrollTop: 0
+            }, 900);
+            return false;
+        });
+
+       
+        AOS.init();
+    </script>
+
+
+
+</body>
+
+
+</html>

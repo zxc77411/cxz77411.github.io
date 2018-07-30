@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--  CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+
+    <style>
+        body {
+            padding-top: 126px;
+            background-image: url("https://78.media.tumblr.com/50af8ed4e4afcc4530c83057db147a91/tumblr_nltc6y6pau1rx5rfmo1_640.gif");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        #swiper1 {
+            width: 100%;
+            height: 600px;
+        }
+
+        .swiper-slide {
+            overflow: hidden;
+        }
+
+        #backTop {
+
+            position: fixed;
+            bottom: 450px;
+            right: 30px;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            display: none;
+            background-image: url("https://78.media.tumblr.com/50af8ed4e4afcc4530c83057db147a91/tumblr_nltc6y6pau1rx5rfmo1_640.gif");
+            background-size: cover;
+            background-position: center;
+            color: #FFFF;
+            border: 0px solid;
+            border-radius: 100%;
+        }
+
+        .swiper-button-next {
+            background-image: none;
+
+        }
+
+        .swiper-button-prev,
+        .swiper-container-rtl .swiper-button-next {
+            background-image: none;
+
+        }
+
+        .parallax-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #swiper2 {
+            padding: 0 49px
+        }
+
+        .footer {
+            background-color: black;
+            color: #FFFF;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .logo {
+            height: 100px;
+            transition: 1s;
+        }
+
+        .logo.active {
+            height: 60px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar  fixed-top  navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="img/Commons-logo.gif" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" style='padding: 20px 10px' ;>Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style='padding: 20px 10px'>Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" style='padding: 20px 10px'>
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" style='padding: 20px 10px'>Disabled</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+    </div>
+    <!-- 輪播 -->
+    <div class="swiper-container" id="swiper1">
+        <div class="swiper-wrapper">
+            <div class="parallax-bg" style="background-image:url(https://vignette.wikia.nocookie.net/octopus-evolution/images/7/79/Post-57598-cute-baby-octopus-swimming-gif-UFxQ.gif/revision/latest?cb=20160714181342)"
+                data-swiper-parallax="-23%">
+            </div>
+            <div class="swiper-slide">
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                    <div class="parallax-bg" style="background-image:url(https://cdn.dribbble.com/users/244516/screenshots/3774144/snow_.gif">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                        <div class="parallax-bg" style="background-image:url(https://cdn.dribbble.com/users/244516/screenshots/3774144/snow_.gif">
+                        </div>
+                    <div class="parallax-bg">
+                        <div class="parallax-bg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next" id="swiperbuttonnext">
+            <i class="far fa-hand-point-right fa-2x"></i>
+        </div>
+        <div class="swiper-button-prev" id="swiperbuttonprev">
+            <i class="far fa-hand-point-left fa-2x"></i>
+        </div>
+        <div class="swiper-pagination" id="swiperpagination">
+        </div>
+    </div>
+
+    <!-- 輪播完 -->
+    <br>
+    <br>
+    <!-- 文字框 -->
+    <div class="se1">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 ">
+                    <div class="mt-3">
+                        <h1 class="text-center" style="color: #ffff;">three </h1>
+                        <p class="text-justify font-weight-bold" style="color: #FFFF;">
+                            Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate
+                            felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis
+                            piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis
+                            iudicium purus sit amet fermentum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 文字框完 -->
+    <br>
+    <br>
+    <!-- 卡片輪播 -->
+    <div class="se2">
+        <div class="container">
+            <div class="swiper-container" id="swiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide ">
+                        <div class="card ">
+                            <img class="card-img-top" src="https://vignette.wikia.nocookie.net/octopus-evolution/images/7/79/Post-57598-cute-baby-octopus-swimming-gif-UFxQ.gif/revision/latest?cb=20160714181342"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card ">
+                            <img class="card-img-top" src="https://vignette.wikia.nocookie.net/octopus-evolution/images/7/79/Post-57598-cute-baby-octopus-swimming-gif-UFxQ.gif/revision/latest?cb=20160714181342"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card ">
+                            <img class="card-img-top" src="https://vignette.wikia.nocookie.net/octopus-evolution/images/7/79/Post-57598-cute-baby-octopus-swimming-gif-UFxQ.gif/revision/latest?cb=20160714181342"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img class="card-img-top" src="https://vignette.wikia.nocookie.net/octopus-evolution/images/7/79/Post-57598-cute-baby-octopus-swimming-gif-UFxQ.gif/revision/latest?cb=20160714181342"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img class="card-img-top" src="https://vignette.wikia.nocookie.net/octopus-evolution/images/7/79/Post-57598-cute-baby-octopus-swimming-gif-UFxQ.gif/revision/latest?cb=20160714181342"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img class="card-img-top" src="https://vignette.wikia.nocookie.net/octopus-evolution/images/7/79/Post-57598-cute-baby-octopus-swimming-gif-UFxQ.gif/revision/latest?cb=20160714181342"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next" id="swiperbuttonnext2">
+                    <i class="far fa-hand-point-right fa-2x" style="color: #ffff"></i>
+                </div>
+                <div class="swiper-button-prev" id="swiperbuttonprev2">
+                    <i class="far fa-hand-point-left fa-2x" style="margin-left:-5px; color: #FFFF "></i>
+                </div>
+                <div class="swiper-pagination" id="swiperpagination2" style="margin-bottom:-10px ;  ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 卡片輪播完 -->
+ <br>
+ <br>
+    <!-- 卡片 -->
+    <div class="se3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12  col-md-5  ">
+                    <img class=" w-100" src="https://vignette.wikia.nocookie.net/octopus-evolution/images/7/79/Post-57598-cute-baby-octopus-swimming-gif-UFxQ.gif/revision/latest?cb=20160714181342"
+                        alt="Card image cap" style="border-radius: 100%;">
+                </div>
+                <div class="col-12  col-md-7 ">
+                    <h1 class="text-center" style="color: #FFFF;">three </h1>
+                    <p class="text-justify font-weight-bold" style="color: #FFFF;">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio
+                        operae, eu vulputate felis rhoncus.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row ">
+                <div class=" col-12 col-md-7 order-2 order-md-1 ">
+                    <h1 class="text-center" style="color: #FFFF;">three </h1>
+                    <p class="text-justify font-weight-bold" style="color: #FFFF;">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio
+                        operae, eu vulputate felis rhoncus.</p>
+                </div>
+                <div class="col-12 col-md-5 order-1 order-md-2">
+                    <img class=" w-100" src="https://vignette.wikia.nocookie.net/octopus-evolution/images/7/79/Post-57598-cute-baby-octopus-swimming-gif-UFxQ.gif/revision/latest?cb=20160714181342"
+                        alt="Card image cap" style="border-radius: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 卡片完 -->
+    <br>
+    <br>
+    <footer class="footer">
+        © Copyright
+    </footer>
+
+    <!-- TOP鈕 -->
+    <button id="backTop"></button>
+    <!--TOP鈕 -->
+
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js " integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T "
+        crossorigin="anonymous "></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+    <script>
+        var swiper1 = new Swiper('#swiper1', {
+            navigation: {
+                nextEl: '#swiperbuttonnext',
+                prevEl: '#swiperbuttonprev',
+            },
+            pagination: {
+                el: '#swiperpagination',
+            },
+        });
+
+        var swiper2 = new Swiper('#swiper2', {
+            slidesPerView: 3,
+            spaceBetween: 50,
+            slidesPerGroup: 3,
+            pagination: {
+                el: '#swiperpagination2',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '#swiperbuttonnext2',
+                prevEl: '#swiperbuttonprev2',
+            },
+            breakpoints: {
+                1000: {
+                    slidesPerView: 2,
+                    spaceBetween: 50,
+                    slidesPerGroup: 2,
+                },
+                500: {
+                    slidesPerView: 1,
+                    spaceBetween: 50,
+                    slidesPerGroup: 1,
+                },
+            }
+
+        });
+
+        AOS.init();
+
+        //回到TOP
+        $(window).scroll(function () {
+            var s = $(window).scrollTop();
+
+            if (s > 226) {
+                $("#backTop").show();
+            } else {
+                $("#backTop").hide();
+            }
+
+        })
+
+        //回到TOP
+        $("#backTop").click(function () {
+            $("html,body").animate({
+                scrollTop: 0
+            }, 900);
+            return false;
+        });
+
+          //scroll事件
+          $(window).scroll(function () {
+            var scrollTop = $(window).scrollTop();
+            console.log("scrollTop:" + scrollTop);
+
+            if(scrollTop>600){
+               
+                $(".logo").addClass("active");
+            }else{
+               
+                $(".logo").removeClass("active");
+            }
+
+        });
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
